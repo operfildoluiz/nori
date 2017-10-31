@@ -1,0 +1,27 @@
+/* Specifics */
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+
+.bg-intro {
+    /*background: #000 url("../assets/intro-car.jpg");*/
+    background: #000 url("../assets/_intro-car.jpg");
+}
+
+.m-intro {
+    padding: 10px;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.m-logo {
+    font-weight: bolder;
+    font-size: 2em;
+    font-family: 'Cabin', sans-serif !important;
+}
+
+.m-about {
+    padding: 30px;
+}
+
+.m-us {
+    padding-top: 20px;
+}

@@ -1,0 +1,51 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+/* Reset */
+* {
+    margin: 0px;
+    font-family: 'Lora', sans-serif;
+    color: #fff;
+}
+
+
+/* Typograph */
+.text-center {
+    text-align: center;
+}
+
+/* Common */
+.full-height   {
+    height: 100vh;
+}
+
+.m {
+    width: 100%;
+}
+
+.half {
+    width: 50%;
+}
+
+.flexible-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.overlay {
+    height: 100%;
+    background: rgba(0,0,0,.45);
+    z-index: 2;
+}
+
+/* Background */
+.bg-red {
+    background: darkred;
+}
+
+.bg-blue {
+    background: #263248;
+}

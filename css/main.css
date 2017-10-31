@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin');
 
 .bg-intro {
-    /*background: #000 url("../assets/intro-car.jpg");*/
-    background: #000 url("../assets/_intro-car.jpg");
+    background: #000 url("../assets/intro-car.jpg");
+    /*background: #000 url("../assets/_intro-car.jpg");*/
 }
 
 .m-intro {
     padding: 10px;
-    font-size: 3em;
+    font-size: 2em;
     text-transform: uppercase;
 }
 
@@ -23,5 +23,5 @@
 }
 
 .m-us {
-    padding-top: 20px;
+    padding: 20px 20px 5px 0px;
 }

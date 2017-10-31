@@ -1,6 +1,11 @@
-@media (max-width: 1028px) {
+@media (max-width: 1024px) {
     .m-intro {
-        font-size: 2em;
+        font-size: 1.4em;
     }
+
+    .half {
+        width:100%;
+    }
+
 }
 

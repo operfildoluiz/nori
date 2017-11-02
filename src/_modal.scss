@@ -28,8 +28,10 @@
     }
 }
 
-.modal-hide {
+.modal-hide, .modal-hide * {
     opacity: 0;
+    width:1px !important;
+    height:1px !important;
 }
 
 

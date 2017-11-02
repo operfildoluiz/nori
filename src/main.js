@@ -42,6 +42,7 @@ var modelos = {
 };
 
 
+
 document.querySelector('.modal-close').onclick = function() {
   document.getElementsByClassName("modal")[0].removeAttribute("style");
   document.getElementsByClassName("modal")[0].classList.add("modal-hide");

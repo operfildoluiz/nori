@@ -20,7 +20,9 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-cssmin": "^0.2.0",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^1.0.2"
   },
   "dependencies": {}
 }

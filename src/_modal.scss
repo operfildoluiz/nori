@@ -21,6 +21,7 @@
 }
 
 .modal-hide {
+    transition: width 2s;
     display: none;
 }
 

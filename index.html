@@ -73,27 +73,55 @@
                 <div class="row">
                     <div class="half">
                         <div class="form-group">
-                            <label for="">Nome</label>
+                            <label>Nome</label>
                             <input type="text" class="input">
                         </div>
                         <div class="form-group">
-                            <label for="">Email</label>
+                            <label>Email</label>
                             <input type="text" class="input">
                         </div>
                         <div class="form-group">
-                            <label for="">Telefone</label>
+                            <label>Telefone</label>
                             <input type="text" class="input">
+                        </div>
+                        <div class="form-group">
+                            <label>Nome do Evento</label>
+                            <input type="text" class="input">
+                        </div>
+                        <div class="form-group">
+                            <label>Fale mais sobre seu evento</label>
+                            <textarea rows="4" class="input"></textarea>
                         </div>
                     </div>
                     <div class="half">
                         <div class="form-group">
-                            <label for="">Automóvel</label>
-                            <select class="input">
+                            <label>Data do Evento</label>
+                            <input type="text" class="input" placeholder="dd/mm/aaaa">
+                        </div>
+                        <div class="form-group">
+                            <label>Categoria do automóvel</label>
+                            <select class="input" id="categoria">
                                 <option value="">Selecione</option>
-                                <option value="">asdfsdf</option>
+                                <option value="c1">Clássico</option>
+                                <option value="c2">Moderno / Luxo</option>
+                                <option value="c3">Lancha</option>
+                                <option value="c4">Helicóptero</option>
                             </select>
                         </div>
+                        <div class="form-group">
+                            <label>Modelo do automóvel</label>
+                            <select class="input" disabled id="modelos">
+                                <option value="">Selecione</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            Seu investimento será de
+                            <h1 class="m m-title">R$ <span id="preco">0,00</span></h1>
+                        </div>
                     </div>
+                </div>
+                <div class="form-group">
+                    <a href="" class="btn btn-blue">Enviar orçamento</a>
                 </div>
             </form>
         </div>
@@ -107,7 +135,7 @@
 
     <div class="modal text-center modal-hide">
         <p><span id="legend"></span></p>
-        <p><img class="img-responsive" /></p>
+        <p><img class="img-responsive" id="modal-img" /></p>
         <p><a class="btn btn-red modal-close">fechar</a></p>
     </div>
 

@@ -91,15 +91,16 @@ document.onscroll = function() {
 
     var actives = document.getElementsByClassName("active");
     if (actives.length > 0) {
+      document.getElementsByClassName("nav")[0].style.opacity = 1;
       actives[0].classList.remove("active");
       document.getElementById("dot1").classList.add('active');
     }
 
   }
   else if (isViewable(document.getElementById("section-galeria"))) {
-
     var actives = document.getElementsByClassName("active");
     if (actives.length > 0) {
+      document.getElementsByClassName("nav")[0].style.opacity = 1;
       actives[0].classList.remove("active");
       document.getElementById("dot2").classList.add('active');
     }
@@ -109,10 +110,13 @@ document.onscroll = function() {
 
     var actives = document.getElementsByClassName("active");
     if (actives.length > 0) {
+      document.getElementsByClassName("nav")[0].style.opacity = 1;
       actives[0].classList.remove("active");
       document.getElementById("dot3").classList.add('active');
     }
 
+  } else {
+      document.getElementsByClassName("nav")[0].style.opacity = 0;
   }
 
 };

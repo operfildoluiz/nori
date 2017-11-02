@@ -1,0 +1,42 @@
+@import 'app';
+@import 'mobile';
+
+/* Specifics */
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+
+.bg-intro {
+    background: #000 url("../assets/intro-car.jpg");
+}
+
+.m-intro {
+    padding: 10px;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.m-logo {
+    font-weight: bolder;
+    font-size: 2em;
+    font-family: 'Cabin', sans-serif !important;
+}
+
+.m-about {
+    padding: 30px;
+}
+
+.m-us {
+    padding: 20px 20px 5px 0px;
+
+    img {
+        display: inline-block;
+        margin:0 auto;
+
+
+    }
+
+    @media (min-width: 1024px) {
+        .micro {
+            max-width: 250px;
+        }
+    }
+}

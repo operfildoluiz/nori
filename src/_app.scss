@@ -21,6 +21,10 @@
     min-height: 100vh;
 }
 
+.footer {
+    min-height: 10vh;
+}
+
 .m {
     width: 100%;
 }
@@ -53,8 +57,8 @@
 }
 
 /* Background */
-.bg-red {
-    background: darkred;
+.bg-turquoise {
+    background: #1abc9c;
 }
 
 .bg-blue {
@@ -62,7 +66,7 @@
 }
 
 .bg-dark {
-    background: grey;
+    background: #333;
 }
 
 /* Items */

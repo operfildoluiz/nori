@@ -1,4 +1,5 @@
 @import 'app';
+@import 'form';
 @import 'mobile';
 @import 'buttons';
 @import 'modal';
@@ -44,10 +45,14 @@
             }
         }
 
-        .img-gallery {
-            max-width: 300px;
-        }
     }
 
 }
 
+@media (min-width: 1024px) {
+    .m-about {
+        .img-gallery {
+            max-width: 300px;
+        }
+    }
+}

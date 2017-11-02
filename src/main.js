@@ -57,18 +57,28 @@ for (i = 0; i < galleries.length; i++) {
   });
 }
 
-// Calculadora
-$("#categoria").change(function() {
-    $("#modelos").removeAttr("disabled");
-    $("#modelos").html("<option value=''>Selecione</option>");
+document.querySelector('#categoria').onchange = function() {
+  document.getElementById("modelos").removeAttribute("disabled");
+  document.getElementById("modelos").innerHTML = "<option value=''>Selecione</option>";
 
-   $.each(modelos[$(this).val()], function(k,v) {
-        $("#modelos").append("<option value='"+v.preco+"'>" + v.nome +"</option>");
-   });
-});
+  modelos[this.value].forEach(function(element) {
+    document.getElementById("modelos").insertAdjacentHTML('beforeend', "<option value='"+element.preco+"'>" + element.nome +"</option>");
+  });
+
+}
+
+document.querySelector('#modelos').onchange = function() {
+    document.getElementById("preco").innerHTML = this.value;
+}
 
 
-$("#modelos").on("change", function() {
-   $("#preco").text($(this).val());
-   $("#preco").show();
-});
+// Scrolling
+var easeInQuad = new SmoothScroll('[data-easing="easeInQuad"]', {easing: 'easeInQuad'});
+
+var dots = document.querySelectorAll(".nav li")
+for (i = 0; i < dots.length; i++) {
+  dots[i].addEventListener('click', function() {
+    document.getElementsByClassName("active")[0].classList.remove("active");
+    this.classList.add('active');
+  });
+}

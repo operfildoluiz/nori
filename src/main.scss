@@ -56,3 +56,13 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    form {
+        .btn {
+            font-size: 1em;
+            transform: scale(0.5);
+            width: 100%;
+        }
+    }
+}

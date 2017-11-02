@@ -7,16 +7,22 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <ul class="nav">
+        <li class="active"><a data-easing="easeInQuad" href="#section-quemsomos">1</a></li>
+        <li><a data-easing="easeInQuad" href="#section-galeria">2</a></li>
+        <li><a data-easing="easeInQuad" href="#section-orcamento">3</a></li>
+    </ul>
+
     <section class="full-height bg-intro flexible-center">
         <div class="overlay text-center flexible-center">
             <div class="m-intro flexible-center">
                 <p class="m m-logo">Nori Autos Luxo</p>
-                <p class="m m-slugline">junto com você tornando seu evento ainda mais especial</p>
-                <a href="#" class="m nav-down"><span class="fa fa-chevron-circle-down fa-3x"></span></a>
+                <p class="m m-slugline">junto com você tornando seu evento mais especial</p>
+                <a data-easing="easeInQuad" href="#section-quemsomos" class="m nav-down"><span class="fa fa-chevron-circle-down fa-3x"></span></a>
             </div>
         </div>
     </section>
-    <section class="full-height bg-blue">
+    <section class="full-height bg-blue" id="section-quemsomos">
         <div class="m-about">
             <p class="m m-title">Quem Somos</p>
             <p class="m m-slugline">Conheça nossa história</p>
@@ -38,7 +44,7 @@
         </div>
     </section>
 
-    <section class="full-height bg-dark">
+    <section class="full-height bg-dark" id="section-galeria">
         <div class="m-about">
             <p class="m m-title">Nossos Automóveis</p>
             <p class="m m-slugline">Conheça nossa frota</p>
@@ -64,12 +70,12 @@
         </div>
     </section>
 
-    <section class="full-height bg-turquoise">
+    <section class="full-height bg-turquoise" id="section-orcamento">
         <div class="m-about">
             <p class="m m-title">Orçamento online</p>
             <p class="m m-slugline">Simule sua contratação</p>
 
-            <form action="" class="m">
+            <form class="m">
                 <div class="row">
                     <div class="half">
                         <div class="form-group">
@@ -111,7 +117,7 @@
                         <div class="form-group">
                             <label>Modelo do automóvel</label>
                             <select class="input" disabled id="modelos">
-                                <option value="">Selecione</option>
+                                <option value="">Selecione uma categoria</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -128,8 +134,22 @@
     </section>
 
     <footer class="footer bg-dark">
-        <div class="m-about text-center">
-            Site construído por <a href="">Luiz Gonçalves</a>
+        <div class="m-about">
+            <div class="row">
+                <div class="half">
+                    <address>
+                        <strong>Nori Autos Luxo</strong><br>
+                        R. Amintas de Barros, 771 - Alto da Rua XV<br>
+                        CEP: 80045-155 - Curitiba - PR<br>
+                        Atendimento: <abbr title="Telefone">41  3092-3653</abbr>
+                    </address>
+                </div>
+                <div class="half">
+
+                </div>
+            </div>
+
+            <p class="m text-center">Site construído por <a href="">Luiz Gonçalves</a></p>
         </div>
     </footer>
 
@@ -139,7 +159,7 @@
         <p><a class="btn btn-red modal-close">fechar</a></p>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/bundle.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

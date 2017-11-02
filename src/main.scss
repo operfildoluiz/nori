@@ -1,5 +1,7 @@
 @import 'app';
 @import 'mobile';
+@import 'buttons';
+@import 'modal';
 
 /* Specifics */
 @import url('https://fonts.googleapis.com/css?family=Cabin');
@@ -14,29 +16,38 @@
     text-transform: uppercase;
 }
 
-.m-logo {
+.m-logo, .m-title {
     font-weight: bolder;
     font-size: 2em;
     font-family: 'Cabin', sans-serif !important;
 }
 
+.m-title {
+    margin-top: 15px;
+}
+
+
 .m-about {
     padding: 30px;
-}
 
-.m-us {
-    padding: 20px 20px 5px 0px;
+    .m-us {
+        padding: 20px 20px 5px 0px;
 
-    img {
-        display: inline-block;
-        margin:0 auto;
+        img {
+            display: inline-block;
+            margin:0 auto;
+        }
 
+        @media (min-width: 1024px) {
+            .micro {
+                max-width: 250px;
+            }
+        }
 
-    }
-
-    @media (min-width: 1024px) {
-        .micro {
-            max-width: 250px;
+        .img-gallery {
+            max-width: 300px;
         }
     }
+
 }
+
